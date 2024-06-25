@@ -152,6 +152,8 @@ h2{
     align-items: flex-start;
     margin: 20px;
     text-transform: uppercase;
+    color: #32aadd;
+    font-size: 35px;
 }
 /* Calculadora de IMC*/
 button {
