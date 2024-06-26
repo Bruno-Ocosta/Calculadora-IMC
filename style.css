@@ -190,8 +190,12 @@ button:hover {
 
 #resultado {
     margin-top: 20px;
-    font-size: 18px;
-    
+    font-size: 18px;   
+}
+.resultado-texto {
+  font-family: sans-serif, Arial;
+  font-size: 20px; 
+  text-align: justify; 
 }
 .calculadoraCentro{
     display: flex;

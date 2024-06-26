@@ -23,7 +23,7 @@ function calcularIMC() {
       imgSrc = 'Imagens/imc-magro.png';
   } else if (imc >= 18.5 && imc < 24.9) {
       classificacao = 'Peso normal. ';
-      aux = 'Que bom que você está com o peso normal! E a melhor maneira de continuar assim é mantendo um estilo de vida ativo e uma alimentação equilibrada. Para melhor auxiliá-lo, consulte os profissionais abaixo. ';
+      aux ='Que bom que você está com o peso normal! E a melhor maneira de continuar assim é mantendo um estilo de vida ativo e uma alimentação equilibrada. Para melhor auxiliá-lo, consulte os profissionais abaixo. ';
       imgSrc = 'Imagens/imc-normal.png';
   } else if (imc >= 25 && imc < 29.9) {
       classificacao = 'Sobrepeso. ';
@@ -48,6 +48,7 @@ function calcularIMC() {
   <br>
   Seu IMC é ${imc.toFixed(2)} ${classificacao} ${aux}.
   `;
+  resultado.classList.add('resultado-texto')
   alteraclass();
 }
  function alteraclass () {
