@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <header>
+        <nav>
+        <div class="teste"><a class="logo" href="/">Calculo de IMC</a></div>
+          <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+            <ul class="nav-list">
+              <li><a href="#">Início</a></li>
+              <li><a href="https://blog.sanny.com.br/medidas-antropometricas" target="_blank">Perimetria</a></li>
+              <li><a href="https://www.tuasaude.com/relacao-cintura-quadril/" target="_blank">Relação Cintura Quadril</a></li>
+              <li><a href="#">Especialistas</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+<div>
+    <main>
+        <div>
+            <img class="imagemPrincipal" src="/imagens/IMC pagina.jpeg" alt="Pessoa em uma balança e uma fita metrica"> 
+        </div>
+        <div>
+            <h2>Índice de Massa Corpórea </h2>
+            <p class="texto">O Índice de Massa Corpórea, conhecido pela sigla IMC é um parâmetro adotado pela Organização Mundial de Saúde para calcular o "peso ideal" de cada pessoa.
+            A classificação do índice de massa corporal (IMC) pode ajudar a identificar problemas de obesidade ou desnutrição em adultos.
+            O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado.</p>
+        </div>
+        <div>
+            <img class="imagemTabela" src="/imagens/Tabela IMC.png" alt="Tabela de Referencia do IMC">
+        </div>
+        <div>
+            <h2>Limitações do IMC</h2>
+            <p class="texto">O IMC apresenta uma série de limitações. É importante avaliar atentamente esse índice, lembrando-se sempre de que outros fatores 
+            podem afetar o peso de uma pessoa. São limitações do IMC:
+            <br>
+            <br>
+            O índice não avalia se o peso está relacionado com o tecido muscular ou tecido adiposo. Isso significa que uma pessoa com grande quantidade de massa muscular pode ser considerada obesa quando analisamos apenas a proporção entre peso e altura.
+            <br>
+            Com o avanço da idade, idosos apresentam uma mudança na proporção corporal de tal forma que a massa livre de gordura (MLG) diminui e a massa gorda geralmente aumenta, sendo armazenada intra-abdominal e intramuscularmente, em vez de subcutaneamente.
+            <br>
+            Mulheres e homens possuem padrões de gordura corporal diferentes. A mulher geralmente apresenta uma maior porcentagem de gordura.
+            <br>
+            <br>
+            Assim sendo, o IMC apresenta suas limitações e nunca deve ser usado como único padrão para avaliar se uma pessoa está ou não acima do peso. Esse índice, quando usado como única forma de avaliação, pode levar a um diagnóstico impreciso e consequentemente a um tratamento ineficiente.
+            </p>
+        </div>
+        <div id= "divCalculadora" class= "calculadoraCentro">
+            <div class="calculo"> 
+            <form id="imcForm">
+                <label for="altura">Altura (em centímetros):</label>
+                <input  class= "valores" type="number" id="altura" name="altura" required>
+                
+                <label for="peso">Peso (em kg):</label>
+                <input class= "valores" type="number" id="peso" name="peso" step="0.1" required>
+                
+            
+                <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+            </form>
+        </div>
+        <div class="hidden" id="resultado">  </div>
+    </div>
+       
+    </main>
+</div>
+    <footer>
+        <div class="container hidden" id="cards">
+            <div class="cards-wrapper">
+              <div class="card">
+                <img src="/imagens/bgPersonal.jpg" alt="top1" class="image-top" />
+                <img src="/imagens/fotoBrunoPerfil.jpeg" alt="image1" class="profile-image" />
+                <h1>Bruno Costa</h1>
+                <h3 class="job">Personal Trainer</h3>
+                <p class="about-me">
+                  Sou personal trainer dedicado a ajudar você a alcançar seus objetivos de saúde e fitness. Meu foco está em criar programas de treinamento personalizados que se adaptam às suas necessidades fisicas, clinicase e metas específicas.                  
+                </p>
+                <a href="https://www.mfitpersonal.com.br/index?share=MTg4MDQ4LzAvOS8w" target="_blank "><button type="button">Entre em Contato </button></a>
+              </div>
+      
+              <div class="card">
+                <img src="/imagens/bgPsicologia.jpeg" alt="top1" class="image-top" />
+                <img src="/imagens/fotoAna.jpeg" alt="image1" class="profile-image" />
+                <h1>Ana Carolina</h1>
+                <h3 class="job">Psicóloga</h3>
+                <p class="about-me">
+                  Sou psicóloga e terapeuta ocupacional. Dentro dessas formações, tenho me dedicado à saúde mental desde 2013 e trilhado um percurso na psicanálise.Atualmente venho aprimorando meus conhecimentos em psicanálise através de estudos.
+                </p>
+                <a href="https://www.anacarolinapsicologia.com/" target="_blank"> <button type="button">Entre em Contato </button></a>
+              </div>
+      
+              <div class="card">
+                <img src="/imagens/bgNutrição.jpeg" alt="top1" class="image-top" />
+                <img src="/imagens/fotoNutri.jpg" alt="image1" class="profile-image" />
+                <h1>Profissional</h1>
+                <h3 class="job">Nutricionista</h3>
+                <p class="about-me">
+                  Sou nutricionista especializado em nutrição clínica e esportiva, com vasta experiência na orientação de dietas personalizadas para equilíbrio nutricional, focado em ajudar você a alcançar metas específicas de saúde e performance.                       
+                </p>
+                <button type="button">Entre em Contato</button>
+              </div>
+            </div>
+          </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
